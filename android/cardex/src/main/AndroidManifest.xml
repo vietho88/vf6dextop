@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="moe.n4tsu.dextop" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:appCategory="game"
+        android:icon="@drawable/ic_cardex"
+        android:label="Dextop Car Companion"
+        android:resizeableActivity="true"
+        android:theme="@style/Theme.CarDex">
+        <activity
+            android:name=".CarDexActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|uiMode"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity-alias
+            android:name=".CarDexPhoneLauncher"
+            android:exported="true"
+            android:icon="@drawable/ic_cardex"
+            android:label="Dextop Car Companion"
+            android:targetActivity=".CarDexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name=".CarDexCarLauncher"
+            android:exported="true"
+            android:icon="@mipmap/ic_cardex_parking"
+            android:label="Dextop・Parking"
+            android:targetActivity=".CarDexActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.CAR_LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+</manifest>

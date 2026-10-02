@@ -1,0 +1,87 @@
+name: Debug APK
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: debug-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Analyze, test, and build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      PYTHONUTF8: "1"
+      GRADLE_OPTS: -Dorg.gradle.jvmargs=-Xmx4g
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android build tools
+        run: >-
+          sdkmanager "platforms;android-36" "build-tools;35.0.0"
+          "ndk;28.2.13676358" "cmake;3.22.1"
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x android/gradlew
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.41.6
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get --enforce-lockfile
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Run Flutter tests
+        run: flutter test
+
+      - name: Run Android unit tests
+        working-directory: android
+        run: ./gradlew :app:testGithubDebugUnitTest :cardex:testDebugUnitTest
+
+      - name: Build Debug APK
+        run: flutter build apk --flavor github --debug --dart-define=DISTRIBUTION_CHANNEL=github
+
+      - name: Build Dextop Car Companion Debug APK
+        working-directory: android
+        run: ./gradlew :cardex:assembleDebug
+
+      - name: Build Dextop Driving Companion Debug APK
+        working-directory: android
+        run: ./gradlew :cardexdriving:assembleDebug
+
+      - name: Upload Nightly APKs
+        uses: actions/upload-artifact@v4
+        with:
+          name: dextop-nightly-${{ github.sha }}
+          path: |
+            build/app/outputs/flutter-apk/app-github-debug.apk
+            build/cardex/outputs/apk/debug/cardex-debug.apk
+            build/cardexdriving/outputs/apk/debug/cardexdriving-debug.apk
+          if-no-files-found: error
+          retention-days: 14

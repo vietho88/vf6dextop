@@ -1,0 +1,2182 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Japanese (`ja`).
+class AppLocalizationsJa extends AppLocalizations {
+  AppLocalizationsJa([String locale = 'ja']) : super(locale);
+
+  @override
+  String get home => 'ホーム';
+
+  @override
+  String get settings => '設定';
+
+  @override
+  String get resolution => '解像度';
+
+  @override
+  String get displayMagnification => '表示倍率';
+
+  @override
+  String get displayMagnificationDescription =>
+      'デスクトップ全体を見やすく拡大します。倍率を上げるほど作業領域は小さくなります。';
+
+  @override
+  String get magnifyWindowsWithDisplay => 'ウィンドウにも倍率を適用';
+
+  @override
+  String get magnifyWindowsWithDisplayDescription =>
+      'ウィンドウ、文字、操作部品も表示倍率に合わせて大きくします。';
+
+  @override
+  String get theme => 'テーマ';
+
+  @override
+  String get system => 'システム';
+
+  @override
+  String get light => 'ライト';
+
+  @override
+  String get dark => 'ダーク';
+
+  @override
+  String get display => '表示';
+
+  @override
+  String get secureDisplay => 'セキュア表示';
+
+  @override
+  String get secureDisplayDescription => '保護されたコンテンツの表示を許可します';
+
+  @override
+  String get mirrorBackend => 'ディスプレイのミラーリング方式';
+
+  @override
+  String get mirrorBackendAuto => '自動（互換性優先）';
+
+  @override
+  String get mirrorBackendAutoDescription => 'この端末で利用可能な最適な方式を使用します';
+
+  @override
+  String get mirrorBackendWindowManager => 'WindowManager';
+
+  @override
+  String get mirrorBackendSurfaceControl => 'SurfaceControl';
+
+  @override
+  String get mirrorBackendVirtualDisplay => 'VirtualDisplay';
+
+  @override
+  String get castMode => 'Google Cast方式';
+
+  @override
+  String get castModeSimple => '互換モード';
+
+  @override
+  String get castModeSimpleDescription => '接続の安定性と幅広い表示機器との互換性を優先します';
+
+  @override
+  String get castModeReceiver => '低遅延モード';
+
+  @override
+  String get castModeReceiverDescription => '操作の応答性を優先して映像を転送します';
+
+  @override
+  String get updateAvailable => 'アップデートがあります';
+
+  @override
+  String get updateAvailableTitle => 'GitHubに最新リリースが公開されています！';
+
+  @override
+  String get playUpdateAvailableTitle => 'Google Playにアップデートがあります';
+
+  @override
+  String get playUpdateAvailableDescription => 'Google Playから最新バージョンに更新できます。';
+
+  @override
+  String get updateNow => '今すぐ更新';
+
+  @override
+  String get checkForUpdates => '更新を確認';
+
+  @override
+  String get checkingForUpdates => '更新情報を取得しています';
+
+  @override
+  String get updateNotChecked => '更新情報をまだ取得していません';
+
+  @override
+  String get upToDate => '最新バージョンです';
+
+  @override
+  String get updateCheckFailed => '更新情報を取得できませんでした';
+
+  @override
+  String get currentVersion => '現在のバージョン';
+
+  @override
+  String get latestVersion => '最新バージョン';
+
+  @override
+  String get openOnGitHub => 'GitHubを開く';
+
+  @override
+  String get close => '閉じる';
+
+  @override
+  String get deviceInfo => '端末情報';
+
+  @override
+  String get desktopMode => '使用するデスクトップモード';
+
+  @override
+  String get accessibilitySettings => 'アクセシビリティ設定';
+
+  @override
+  String get accessibilityDescription => 'Dextopのサービス設定を開きます';
+
+  @override
+  String get appInfo => 'アプリ情報';
+
+  @override
+  String get appInfoEmbeddedBinder => '内蔵Binder';
+
+  @override
+  String get appInfoEmbeddedBinderIncluded => 'このビルドに内蔵されています';
+
+  @override
+  String get appInfoEmbeddedBinderNotIncluded => 'このビルドには内蔵されていません';
+
+  @override
+  String get appInfoEmbeddedBinderProvider => '使用状態';
+
+  @override
+  String get appInfoEmbeddedBinderSelected => '使用中';
+
+  @override
+  String get appInfoEmbeddedBinderStandby => '外部プロバイダーを使用中';
+
+  @override
+  String get appInfoEmbeddedBinderConnection => 'Binder接続';
+
+  @override
+  String get appInfoEmbeddedBinderPermission => 'Dextop権限';
+
+  @override
+  String get appInfoEmbeddedBinderNotifications => '通知権限';
+
+  @override
+  String get appInfoStatusConnected => '接続済み';
+
+  @override
+  String get appInfoStatusDisconnected => '未接続';
+
+  @override
+  String get appInfoStatusGranted => '許可済み';
+
+  @override
+  String get appInfoStatusNotGranted => '未許可';
+
+  @override
+  String get licenses => 'オープンソースライセンス';
+
+  @override
+  String get licensesDescription => 'Flutterと使用ライブラリのライセンスを表示';
+
+  @override
+  String get landscape => '横向き';
+
+  @override
+  String get portrait => '縦向き';
+
+  @override
+  String get stopped => '停止中';
+
+  @override
+  String get running => '起動中';
+
+  @override
+  String get start => '起動';
+
+  @override
+  String get stop => '停止';
+
+  @override
+  String get customAdd => 'カスタム解像度を追加';
+
+  @override
+  String get editResolution => '解像度を編集';
+
+  @override
+  String get add => '追加';
+
+  @override
+  String get save => '保存';
+
+  @override
+  String get deleteResolution => 'この解像度を削除';
+
+  @override
+  String get width => '幅';
+
+  @override
+  String get height => '高さ';
+
+  @override
+  String get protectedContent => '保護されたコンテンツの表示を許可します';
+
+  @override
+  String get version => 'バージョン 1.0.0';
+
+  @override
+  String get setupWelcome => 'Dextopへようこそ。';
+
+  @override
+  String get setupTagline => 'スマホ単体で、完璧なデスクトップ環境を。';
+
+  @override
+  String get setupBegin => 'はじめる';
+
+  @override
+  String get setupPhaseTerms => 'ご利用にあたって';
+
+  @override
+  String get setupPhaseDriver => 'Dextopを接続';
+
+  @override
+  String get setupTutorialTitle => 'セットアップの流れ';
+
+  @override
+  String get setupPhaseAccessibility => 'ユーザー補助';
+
+  @override
+  String get setupPhaseReady => '準備完了';
+
+  @override
+  String get setupPhaseShizuku => 'Shizuku';
+
+  @override
+  String get setupPhaseDevice => '端末の確認';
+
+  @override
+  String get setupPhaseDemo => '操作を体験';
+
+  @override
+  String get back => '戻る';
+
+  @override
+  String get review => '再確認';
+
+  @override
+  String get reviewThreeFingerGesture => '3本指ジェスチャーを再確認';
+
+  @override
+  String get continueLabel => '続ける';
+
+  @override
+  String get done => '完了';
+
+  @override
+  String get incomplete => '未完了';
+
+  @override
+  String get setupSystemTitle => 'システム機能を利用します';
+
+  @override
+  String get setupSystemDescription =>
+      'DextopはShizukuとADBを使用し、仮想ディスプレイ、画面方向、入力、システムUIを制御します。また、AccessibilityService API（ユーザー補助）をデスクトップオーバーレイの表示と操作、ユーザーが行ったタッチ・ポインター・ナビゲーション入力の転送、セッション終了時の端末UI復元に使用します。ユーザー補助のデータを収集、保存、共有することはありません。';
+
+  @override
+  String get setupTutorialDriverTitle => 'Dextopをドライバに接続します';
+
+  @override
+  String get setupTutorialDriverDescription => 'ペアリングが必要なのは初回のみです。必要な作業を案内します。';
+
+  @override
+  String get setupTutorialAccessibilityTitle => 'ユーザー補助をON';
+
+  @override
+  String get setupTutorialAccessibilityDescription =>
+      'デスクトップ環境の表示や操作にユーザー補助を利用します。設定画面が開きますので、「インストール済みアプリ」からDextopをオンにしてください。';
+
+  @override
+  String get setupTutorialAccessibilityButton => 'ユーザー補助設定を開く';
+
+  @override
+  String get setupTutorialAccessibilityEnabled => 'ユーザー補助権限';
+
+  @override
+  String get accessibilityDisclosureTitle => 'ユーザー補助サービスに関する開示';
+
+  @override
+  String get accessibilityDisclosureBody =>
+      'Dextopは、デスクトップ画面の表示と操作、入力先の検出、通知から開いたアプリの移動、キーボードとマウスによる操作を提供するために、ユーザー補助サービスを使用します。\n\nこのサービスにより、画面上のアプリとウィンドウ、操作イベント、フォーカス中の入力欄とその入力内容、キーボードとマウスの入力にアクセスする場合があります。これらの情報は、Dextopの機能を端末上で提供するためだけに処理されます。Dextopが収集、保存、外部送信、第三者への共有を行うことはありません。';
+
+  @override
+  String get accessibilityDisclosureAgree => '同意して設定を開く';
+
+  @override
+  String get accessibilityDisclosureDecline => '同意しない';
+
+  @override
+  String get setupTutorialReadyTitle => 'これで準備は完了です';
+
+  @override
+  String get setupTutorialReadyDescription => 'この二つが完了すれば、あとは利用を開始するだけです。';
+
+  @override
+  String get setupDisclaimer =>
+      '端末やOSの実装差、システム更新、他のアプリとの競合などにより生じた不具合、データ損失、端末機能への影響について、開発者は責任を負いません。内容を理解したうえで使用してください。';
+
+  @override
+  String get setupShizukuTitle => 'Shizukuを準備';
+
+  @override
+  String get setupShizukuDescription =>
+      'Dextopがシステム機能へ安全にアクセスするためにShizukuを使用します。';
+
+  @override
+  String get setupInstallShizuku => 'Shizukuをインストール';
+
+  @override
+  String get setupConfigureShizuku => 'Shizukuを設定';
+
+  @override
+  String get setupShizukuHint =>
+      'Shizukuを開き、「ペアリング」に表示される順序に従って設定し、Shizukuを開始してください。';
+
+  @override
+  String get setupOpenShizuku => 'Shizukuを開く';
+
+  @override
+  String get setupValidate => '設定が完了しましたか？ 有効性をチェック';
+
+  @override
+  String get setupDextopPermission => 'Dextopへの権限';
+
+  @override
+  String get setupInstallPlay => 'Google Playからインストール';
+
+  @override
+  String get setupAllowPermission => '権限を許可';
+
+  @override
+  String get setupProviderChoiceTitle => '特権サービスを選択';
+
+  @override
+  String get setupProviderChoiceDescription =>
+      '複数のShizuku互換サービスがインストールされています。Dextopで使用するサービスを選択してください。';
+
+  @override
+  String get setupUseStellar => 'Stellar（推奨）';
+
+  @override
+  String get setupUseShizuku => 'Shizuku';
+
+  @override
+  String get setupRunningAsRoot => 'rootでサービスを実行中です';
+
+  @override
+  String get setupRootVerified =>
+      'Shizukuがrootで実行中であることを確認しました。Dextopへの権限を付与してください。';
+
+  @override
+  String get setupRootNotRunning =>
+      'Shizukuがrootで実行中であることを確認できませんでした。rootで起動してから、もう一度確認してください。';
+
+  @override
+  String get setupQuestionOpen => 'Shizukuを開きましたか？';
+
+  @override
+  String get setupQuestionPair => '「ペアリング」に表示された手順をすべて完了しましたか？';
+
+  @override
+  String get setupQuestionStart => 'Shizukuで「開始」を押し、「Shizukuは実行中です」と表示されていますか？';
+
+  @override
+  String get yes => 'はい';
+
+  @override
+  String get no => 'いいえ';
+
+  @override
+  String get setupVerified => 'Shizukuの設定を確認しました';
+
+  @override
+  String get setupAccessVerified => 'アクセス権限の設定を確認しました';
+
+  @override
+  String get setupVerificationFailed =>
+      'Shizukuの設定または開始を確認できません。Shizuku内の手順を完了してから、もう一度確認してください。';
+
+  @override
+  String get setupPermissionCheckFailed => 'Shizukuの権限を確認できませんでした';
+
+  @override
+  String get setupDeviceTitle => 'この端末での構成';
+
+  @override
+  String get model => '機種';
+
+  @override
+  String get vendor => 'ベンダー';
+
+  @override
+  String get desktopUi => 'デスクトップUI';
+
+  @override
+  String get detectedResolution => '自動検出解像度';
+
+  @override
+  String get automaticResolution => '自動';
+
+  @override
+  String get loadingLabel => '取得中…';
+
+  @override
+  String get setupDeviceDescription => 'この情報をもとに、初回の解像度と端末固有のデスクトップ制御を設定します。';
+
+  @override
+  String get setupGestureTitle => 'ジェスチャーで操作パネルを呼び出しましょう';
+
+  @override
+  String get setupGestureDescription => '下の3つの円へ、3本の指を同時に置いてください。';
+
+  @override
+  String get setupInstallGitHub => 'GitHubからダウンロード';
+
+  @override
+  String get setupGestureReviewed => '新しいジェスチャーの確認が完了しました。';
+
+  @override
+  String get setupGestureReview => 'デモを再確認';
+
+  @override
+  String get setupGestureStart => 'デモを開始';
+
+  @override
+  String get setupGestureLandscape => '横向きの場合\n画面左から右に3本指でスワイプ';
+
+  @override
+  String get setupGesturePortrait => '縦持ちの場合\n画面上から下に3本指でスワイプ';
+
+  @override
+  String get setupGestureNext => '次へ';
+
+  @override
+  String get uiTwoFingerTap => '2本指タップ';
+
+  @override
+  String get ui3FingerTap => '3本指タップ';
+
+  @override
+  String get ui4Divisions => '4分割';
+
+  @override
+  String get uiDextopIsReady => 'Dextopの準備ができました';
+
+  @override
+  String get uiDextopStopping => 'Dextopの終了処理中';
+
+  @override
+  String get uiStopDextop => 'Dextopを停止';
+
+  @override
+  String get uiDextopCanBeRestarted => 'Dextopを再開できます';
+
+  @override
+  String get uiOpenDextop => 'Dextopを開く';
+
+  @override
+  String get uiCreateADextopSession => 'Dextopセッション作成';
+
+  @override
+  String get uiDextopWorkspaceJson => 'DextopワークスペースJSON';
+
+  @override
+  String get uiPerformanceDisplayOnDextop => 'Dextop上にパフォーマンス表示';
+
+  @override
+  String get uiDoNotSleepWhileRunningDextop => 'Dextop実行中はスリープしない';
+
+  @override
+  String get uiRealTimeDisplayOfFpsMemoryPower => 'FPS、メモリ、消費電力、バッテリーをリアルタイム表示';
+
+  @override
+  String get uiCouldNotLoadJson => 'JSONを読み込めませんでした';
+
+  @override
+  String get uiSecureSettingsPermission => 'Secure Settings権限';
+
+  @override
+  String get uiAllowShizukuPermissions => 'Shizuku の権限を許可';
+
+  @override
+  String get uiInstallShizuku => 'Shizuku をインストール';
+
+  @override
+  String get uiCheckingShizukuConnection => 'Shizuku 接続確認中';
+
+  @override
+  String get uiShizukuConnection => 'Shizuku接続';
+
+  @override
+  String get uiCopy => 'のコピー';
+
+  @override
+  String get uiOthers => 'その他';
+
+  @override
+  String get uiAccessibilityOverlay => 'アクセシビリティオーバーレイ';
+
+  @override
+  String get uiAccessibilityServices => 'アクセシビリティサービス';
+
+  @override
+  String get uiAppNotFound => 'アプリが見つかりません';
+
+  @override
+  String get uiAppsAndWorkspace => 'アプリとワークスペース';
+
+  @override
+  String get uiLaunchTheAppAndConfigureYourWorkspace => 'アプリの起動とワークスペースの構成';
+
+  @override
+  String get uiRestartTheApp => 'アプリを再起動';
+
+  @override
+  String get uiSearchApp => 'アプリを検索';
+
+  @override
+  String get uiAppMemory => 'アプリメモリ';
+
+  @override
+  String get uiAppLauncher => 'アプリランチャー';
+
+  @override
+  String get uiAppLauncherSettings => 'アプリランチャー設定';
+
+  @override
+  String get uiAppLaunchFunction => 'アプリ起動機能';
+
+  @override
+  String get uiImport => 'インポート';
+
+  @override
+  String get uiExport => 'エクスポート';
+
+  @override
+  String get uiCursor => 'カーソル';
+
+  @override
+  String get uiCancel => 'キャンセル';
+
+  @override
+  String get uiQuickSettingsTile => 'クイック設定タイル';
+
+  @override
+  String get uiGesture => 'ジェスチャー';
+
+  @override
+  String get uiSecondaryIme => 'セカンダリIME';
+
+  @override
+  String get uiSecureDisplayFoldable => 'セキュア表示、ミラーリング方式、Foldable';
+
+  @override
+  String get uiSecurity => 'セキュリティ';
+
+  @override
+  String get topologyTitle => 'ディスプレイ配置';
+
+  @override
+  String get topologyArrangeDisplays => 'ディスプレイの配置';
+
+  @override
+  String get topologySummary => '実際のモニター配置に最適化することができます';
+
+  @override
+  String get topologyDescription =>
+      'ディスプレイをドラッグして再配置します。画面間のポインター移動が実際の設置位置と一致するように並べてください。';
+
+  @override
+  String get topologyApply => '適用';
+
+  @override
+  String get topologyApplied => 'ディスプレイ配置を適用しました';
+
+  @override
+  String get topologyIdentify => '識別';
+
+  @override
+  String get topologyRefresh => '再読み込み';
+
+  @override
+  String get topologyReset => 'リセット';
+
+  @override
+  String get topologyBuiltInScreen => '内蔵スクリーン';
+
+  @override
+  String get displayIncludePhoneSummary =>
+      '有効にすると、ディスプレイ間でアプリやマウスポインタを跨いで移動できるようになります';
+
+  @override
+  String get displayAutoHideTaskbarSummary => '未使用時にデスクトップのタスクバーを自動的に隠します';
+
+  @override
+  String get displayForceInternal120Hz => '内蔵ディスプレイを120Hzで動作';
+
+  @override
+  String get displayForceInternal120HzSummary =>
+      'Dextop実行中は対応する内蔵画面を120Hzに固定します';
+
+  @override
+  String get displaySoftwareCursorFallback => 'ソフトウェアカーソルに戻す';
+
+  @override
+  String get displaySoftwareCursorFallbackSummary =>
+      '有効にすると従来のソフトウェアカーソルを使用します';
+
+  @override
+  String get mouseSettingsTitle => 'マウス';
+
+  @override
+  String get mouseSettingsDescription => '仮想マウスの入力とカーソルを設定';
+
+  @override
+  String get virtualPointerProfile => '入力デバイス';
+
+  @override
+  String get virtualTouchpad => 'タッチパッド';
+
+  @override
+  String get virtualTouchpadDescription => '仮想タッチパッドとして登録します';
+
+  @override
+  String get virtualPointerMouse => '仮想マウス';
+
+  @override
+  String get virtualPointerMouseDescription => '相対マウスデバイスとして登録します';
+
+  @override
+  String get virtualPointerSoftware => 'ソフトウェアカーソル';
+
+  @override
+  String get virtualPointerSoftwareDescription => 'Dextop内の従来のカーソルを使用します';
+
+  @override
+  String get virtualMouseScrollDirection => 'スクロール方向';
+
+  @override
+  String get virtualMouseNaturalScroll => 'ナチュラル（Mac）';
+
+  @override
+  String get virtualMouseStandardScroll => '標準（Windows）';
+
+  @override
+  String get uiConvenience => '便利機能';
+
+  @override
+  String get uiDisplayCategory => 'ディスプレイ';
+
+  @override
+  String get foldableLaptopMode => 'ラップトップモードを自動で検知';
+
+  @override
+  String get foldableLaptopModeDescription =>
+      '折りたたみ角度を検知して、ラップトップモードを自動で有効にします';
+
+  @override
+  String get topologyNoDisplays => '配置できるディスプレイがありません';
+
+  @override
+  String get topologyUnavailable => 'この端末ではディスプレイトポロジーを利用できません';
+
+  @override
+  String get displaySettingsTitle => 'ディスプレイ設定';
+
+  @override
+  String get displaySettingsSummary => 'ディスプレイの配置と解像度を管理します';
+
+  @override
+  String get displayResolutionListTitle => 'ディスプレイの解像度';
+
+  @override
+  String get displayResolutionListSummary => '接続されているディスプレイの情報と対応モードを確認します';
+
+  @override
+  String get displayDetailsTitle => 'ディスプレイ情報';
+
+  @override
+  String get displayNoLongerAvailable => '選択したディスプレイは利用できなくなりました';
+
+  @override
+  String get displaySupportedResolutions => '対応する解像度';
+
+  @override
+  String get displayDextopResolutionTitle => 'Dextopセッションの解像度';
+
+  @override
+  String get displayDextopResolutionSummary => 'ホーム画面の解像度から変更できます';
+
+  @override
+  String get displayCurrentMode => '現在使用中';
+
+  @override
+  String get displayModeApplied => 'ディスプレイの解像度を変更しました';
+
+  @override
+  String get uiTap => 'タップ';
+
+  @override
+  String get uiTapPressAndHoldMultiFingerOperation => 'タップ、長押し、複数指操作';
+
+  @override
+  String get uiOpenAppOnDesktop => 'デスクトップでアプリを開く';
+
+  @override
+  String get uiDesktopMode => 'デスクトップモード';
+
+  @override
+  String get uiDesktopFeatures => 'デスクトップ機能';
+
+  @override
+  String get uiTrackpad => 'トラックパッド';
+
+  @override
+  String get uiDrag => 'ドラッグ';
+
+  @override
+  String get uiBattery => 'バッテリー';
+
+  @override
+  String get uiPerformance => 'パフォーマンス';
+
+  @override
+  String get uiPerformanceCompatibility => 'パフォーマンス、互換性';
+
+  @override
+  String get uiItSupportsMultiTouchAndTheThree =>
+      'マルチタッチに対応し、3本指ジェスチャーは画面左からに変更されます。';
+
+  @override
+  String get uiMainLarge2Sub => 'メイン大・サブ2枚';
+
+  @override
+  String get uiMainLeft => 'メイン（左）';
+
+  @override
+  String get uiLayout => 'レイアウト';
+
+  @override
+  String get uiWorkSpace => 'ワークスペース';
+
+  @override
+  String get uiCopiedWorkspaceJsonToClipboard => 'ワークスペースJSONをクリップボードへコピーしました';
+
+  @override
+  String get uiImportWorkspace => 'ワークスペースをインポート';
+
+  @override
+  String get uiSaveWorkspace => 'ワークスペースを保存';
+
+  @override
+  String get uiDeleteWorkspace => 'ワークスペースを削除';
+
+  @override
+  String get uiEditWorkspace => 'ワークスペースを編集';
+
+  @override
+  String get uiUp => '上へ';
+
+  @override
+  String get uiDividedIntoUpperAndLowerParts => '上下2分割';
+
+  @override
+  String get uiUpperHalf => '上半分';
+
+  @override
+  String get uiMoveDown => '下へ移動';
+
+  @override
+  String get uiLowerHalf => '下半分';
+
+  @override
+  String get uiCenter => '中央';
+
+  @override
+  String get uiCompatibilityDiagnosis => '互換性診断';
+
+  @override
+  String get uiVirtualDisplayCreation => '仮想ディスプレイ作成';
+
+  @override
+  String get uiOpenASavedAppConfiguration => '保存したアプリ構成を開く';
+
+  @override
+  String get uiNoSavedWorkspaces => '保存済みワークスペースはありません';
+
+  @override
+  String get uiInputAndGestures => '入力とジェスチャー';
+
+  @override
+  String get uiInputMode => '入力モード';
+
+  @override
+  String get uiCancelFullScreen => '全画面を解除';
+
+  @override
+  String get uiReDiagnosis => '再診断';
+
+  @override
+  String get uiRestart => '再開';
+
+  @override
+  String get uiAvailableMemory => '利用可能メモリ';
+
+  @override
+  String get uiDelete => '削除';
+
+  @override
+  String get uiYouCanRestoreYourPreviousSession => '前回のセッションを復旧できます';
+
+  @override
+  String get uiRight => '右';
+
+  @override
+  String get uiRight13 => '右1/3';
+
+  @override
+  String get uiRight23 => '右2/3';
+
+  @override
+  String get uiRightClick => '右クリック';
+
+  @override
+  String get uiUpperRight => '右上';
+
+  @override
+  String get uiLowerRight => '右下';
+
+  @override
+  String get uiRightHalf => '右半分';
+
+  @override
+  String get uiName => '名前';
+
+  @override
+  String get uiLargeScreenFoldable => '大画面・Foldable';
+
+  @override
+  String get uiActualFps => '実測FPS';
+
+  @override
+  String get uiExperimentalMultiTouch => '実験的なマルチタッチ';
+
+  @override
+  String get uiExperimentalFeatures => '実験的な機能';
+
+  @override
+  String get uiLeft => '左';
+
+  @override
+  String get uiLeft13 => '左1/3';
+
+  @override
+  String get uiLeft13Right23 => '左1/3・右2/3';
+
+  @override
+  String get uiLeft23 => '左2/3';
+
+  @override
+  String get uiLeft23Right13 => '左2/3・右1/3';
+
+  @override
+  String get uiLeftCenterRight => '左・中央・右';
+
+  @override
+  String get uiUpperLeft => '左上';
+
+  @override
+  String get uiUpperLeftUpperRightLowerHalf => '左上・右上・下半分';
+
+  @override
+  String get uiLowerLeft => '左下';
+
+  @override
+  String get uiLeftHalf => '左半分';
+
+  @override
+  String get uiDividedIntoLeftAndRight => '左右2分割';
+
+  @override
+  String get uiSwipeRightWithThreeFingersFromThe => '左端から3本指で右へスワイプ';
+
+  @override
+  String get uiRecoverySession => '復旧セッション';
+
+  @override
+  String get uiEstimatedPowerConsumption => '推定消費電力';
+
+  @override
+  String get uiOperationOverlay => '操作オーバーレイ';
+
+  @override
+  String get uiShowActionOverlay => '操作オーバーレイを表示';
+
+  @override
+  String get uiOperationMenu => '操作メニュー';
+
+  @override
+  String get uiThereIsAnExistingSession => '既存のセッションがあります';
+
+  @override
+  String get uiSaveConfiguration => '構成を保存';
+
+  @override
+  String get uiRestorePrivileges => '権限を復旧';
+
+  @override
+  String get uiChangeToHorizontalHold => '横持ちに変更';
+
+  @override
+  String get uiPreparationIsRequired => '準備が必要です';
+
+  @override
+  String get uiPhysicalKeyboard => '物理キーボード';
+
+  @override
+  String get uiPhysicalMouse => '物理マウス';
+
+  @override
+  String get uiConditionAndDiagnosis => '状態と診断';
+
+  @override
+  String get uiPreventsTheScreenFromTurningOffAutomatically => '画面の自動消灯を防止します';
+
+  @override
+  String get uiDestruction => '破棄';
+
+  @override
+  String get uiTerminalAndPermissions => '端末と権限';
+
+  @override
+  String get uiDeviceInformationDesktopModeAccessibility =>
+      '端末情報、デスクトップモード、アクセシビリティ';
+
+  @override
+  String get uiTerminalResolution => '端末解像度';
+
+  @override
+  String get uiEnd => '終了';
+
+  @override
+  String get uiTerminationProcessingCompletedSuccessfully => '終了処理は正常に完了しました。';
+
+  @override
+  String get uiEdit => '編集';
+
+  @override
+  String get uiChangeToPortraitOrientation => '縦持ちに変更';
+
+  @override
+  String get uiVerticalHorizontalSwitching => '縦横切り替え';
+
+  @override
+  String get uiDisplayOptimization => '表示の最適化';
+
+  @override
+  String get uiDisplayRefreshRate => '表示リフレッシュレート';
+
+  @override
+  String get uiReproduction => '複製';
+
+  @override
+  String get uiManageLaunchedAppsAndConfigurations => '起動するアプリと構成の管理';
+
+  @override
+  String get uiCouldNotStart => '起動できませんでした';
+
+  @override
+  String get uiLongPress => '長押し';
+
+  @override
+  String get uiAutomaticallyUsesMeasuredResolutionForOpenAnd =>
+      '開いた状態と閉じた状態の実測解像度を自動使用';
+
+  @override
+  String get uiStart => '開始';
+
+  @override
+  String get uiRunningAuto => '起動中（Auto）';
+
+  @override
+  String get uiRunningAutoPlus => '起動中（Auto+）';
+
+  @override
+  String get uiStartPhoneDextop => 'この端末でDextopを開始';
+
+  @override
+  String get uiStopAndroidAuto => '停止（Android Auto）';
+
+  @override
+  String get uiAutomaticSwitchingAccordingToOpenClosedState =>
+      '開閉状態に合わせて自動切り替え';
+
+  @override
+  String get uiOpeningQuote => '「';
+
+  @override
+  String get uiDeleteWorkspaceQuestionSuffix => '」を削除しますか？';
+
+  @override
+  String get uiAbnormalSessionWarning =>
+      '不正な状態でセッションが終了されたため、\n一部のAndroid側の機能が無効化されている可能性があります。';
+
+  @override
+  String get uiChecking => '確認中';
+
+  @override
+  String get uiIdle => '待機中';
+
+  @override
+  String get uiAvailable => 'Available';
+
+  @override
+  String get uiUnavailable => 'Unavailable';
+
+  @override
+  String get appName => 'Dextop';
+
+  @override
+  String get uiAndroid => 'Android';
+
+  @override
+  String get uiGitHub => 'GitHub';
+
+  @override
+  String get uiGitHubRepository => 'NarYuki/Dextop';
+
+  @override
+  String get diagnosticLog => '動作ログと端末診断';
+
+  @override
+  String get diagnosticLogDescription => 'アプリのログ、能力判定、端末の詳細スペックを表示します';
+
+  @override
+  String get loadDiagnosticLog => '診断レポートを読み込む';
+
+  @override
+  String get copyDiagnosticLog => 'コピー';
+
+  @override
+  String get shareDiagnosticLog => '共有';
+
+  @override
+  String get clearDiagnosticLog => 'ログを消去';
+
+  @override
+  String get deviceReport => '動作報告';
+
+  @override
+  String get uiCpuTemperature => 'CPU温度';
+
+  @override
+  String get deviceReportDescription => '端末情報と機能の対応状況をメールで報告';
+
+  @override
+  String get deviceReportIntro => '端末情報は自動収集されます。各機能の動作状況を選択してください。';
+
+  @override
+  String get reportWorking => '動作した';
+
+  @override
+  String get reportNotWorking => '動作しない';
+
+  @override
+  String get reportUntested => '未確認';
+
+  @override
+  String get reportOverall => '総合的な動作状況';
+
+  @override
+  String get reportNotes => 'その他・特記事項';
+
+  @override
+  String get sendDeviceReport => 'メールで動作報告を送る';
+
+  @override
+  String get reportEmailUnavailable => 'メールアプリを開けませんでした';
+
+  @override
+  String get reportTemplateTitle => 'Dextop端末動作報告';
+
+  @override
+  String get reportNoNotes => 'なし';
+
+  @override
+  String get reportNoSessionLog => '完了したDextopセッションのログはまだありません。';
+
+  @override
+  String get reportFeatureStartup => 'アプリ起動と端末検出';
+
+  @override
+  String get reportFeatureSession => 'Dextopセッションの起動';
+
+  @override
+  String get reportFeatureVirtualDisplay => 'VirtualDisplayミラーリング';
+
+  @override
+  String get reportFeatureWindowManager => 'WindowManagerミラーリング';
+
+  @override
+  String get reportFeatureSurfaceControl => 'SurfaceControlミラーリング';
+
+  @override
+  String get reportFeatureLandscape => '横向きモード';
+
+  @override
+  String get reportFeaturePortrait => '縦向きモード';
+
+  @override
+  String get reportFeatureSecureDisplay => 'セキュア表示';
+
+  @override
+  String get reportFeatureLauncher => 'アプリランチャーとフリーフォームウィンドウ';
+
+  @override
+  String get reportFeatureWorkspace => 'ワークスペースの保存と復元';
+
+  @override
+  String get reportFeatureCursor => 'カーソル・タッチパッド入力';
+
+  @override
+  String get reportFeatureDirectTouch => 'ダイレクトタッチ入力';
+
+  @override
+  String get reportFeatureMultiTouch => 'マルチタッチのスクロールとピンチズーム';
+
+  @override
+  String get reportFeatureGesture => '3本指オーバーレイジェスチャー';
+
+  @override
+  String get reportFeatureMouse => '物理マウス';
+
+  @override
+  String get reportFeatureKeyboard => '物理キーボード';
+
+  @override
+  String get reportFeatureRouting => '物理マウス・キーボードのディスプレイルーティング';
+
+  @override
+  String get reportFeatureFoldable => '折りたたみ端末の自動解像度';
+
+  @override
+  String get reportFeaturePerformance => 'パフォーマンスオーバーレイ';
+
+  @override
+  String get reportFeatureCleanup => 'セッション終了処理とAndroid状態の復元';
+
+  @override
+  String get samsungExperimentalTitle => '実験的なSamsungデスクトップ設定';
+
+  @override
+  String get samsungUnavailable => 'Samsung端末でのみ利用できます';
+
+  @override
+  String get samsungExperimentalDescription => '純正DeX設定で非表示になる項目をDextopから変更します';
+
+  @override
+  String get samsungSettingsTitle => 'Samsungデスクトップ設定';
+
+  @override
+  String get samsungSettingsSummary => '表示・入力・タスクバー設定';
+
+  @override
+  String get samsungRestoreSuccess => 'Samsung設定を元の環境へ復元しました';
+
+  @override
+  String get samsungConfirmTitle => '設定変更の確認';
+
+  @override
+  String get samsungPermanentWarning =>
+      'この項目はDextopの体験と通常使用時のデスクトップ環境に恒久的（初期化されるまで）な影響を及ぼす可能性があります。';
+
+  @override
+  String get samsungAcceptEnable => '同意して有効化';
+
+  @override
+  String get samsungAboutSetting => 'この設定について';
+
+  @override
+  String get samsungRestoreEnvironment => '環境を復元';
+
+  @override
+  String get samsungSettingsIntro =>
+      'Samsung純正設定が外部ディスプレイ未接続として隠すDeX設定値を直接変更します。変更はSamsung DeXと対応するDextop機能に反映されます。';
+
+  @override
+  String get samsungResolution => '外部画面の解像度';
+
+  @override
+  String get samsungScreenZoom => '画面ズーム（DPI）';
+
+  @override
+  String get samsungFontScale => 'フォントサイズ';
+
+  @override
+  String get samsungScreenTimeout => '画面タイムアウト';
+
+  @override
+  String get samsungAudioOutput => '外部画面から音声を出力';
+
+  @override
+  String get samsungDisplayOrientation => '外部画面の回転';
+
+  @override
+  String get samsungDisplayArrangement => '画面配置';
+
+  @override
+  String get samsungSectionInput => '入力';
+
+  @override
+  String get samsungSectionDesktop => 'デスクトップ';
+
+  @override
+  String get samsungInputLockedWhileRunning =>
+      'Dextop使用中は、競合するSamsung入力設定を変更できません。';
+
+  @override
+  String get samsungAutorunTouchpad => 'タッチパッドを自動起動';
+
+  @override
+  String get samsungTouchpadScrollDirection => 'スクロール方向を反転';
+
+  @override
+  String get samsungTouchKeyboard => '接続時に画面キーボードを表示';
+
+  @override
+  String get samsungKeyboardDex => '物理キーボード使用中も表示';
+
+  @override
+  String get samsungSpenInputMode => 'S Penをマウスとして使用';
+
+  @override
+  String get samsungThreeFingerGesture => '3本指ジェスチャー';
+
+  @override
+  String get samsungFourFingerGesture => '4本指ジェスチャー';
+
+  @override
+  String get samsungAutoHideTaskbar => 'タスクバーを自動的に隠す';
+
+  @override
+  String get samsungDexCommandArrow => 'コマンド矢印を表示';
+
+  @override
+  String get samsungIncludePhoneDisplay => 'Dextopをディスプレイトポロジーに含める';
+
+  @override
+  String get samsungMirrorPhoneDisplay => '端末画面をミラーリング';
+
+  @override
+  String get samsungReviewEnable => '注意事項を確認して設定変更を有効化';
+
+  @override
+  String get samsungSeconds15 => '15秒';
+
+  @override
+  String get samsungSeconds30 => '30秒';
+
+  @override
+  String get samsungMinute1 => '1分';
+
+  @override
+  String get samsungMinutes2 => '2分';
+
+  @override
+  String get samsungMinutes5 => '5分';
+
+  @override
+  String get samsungMinutes10 => '10分';
+
+  @override
+  String get samsungMinutes20 => '20分';
+
+  @override
+  String get samsungMinutes30 => '30分';
+
+  @override
+  String get samsungHour1 => '1時間';
+
+  @override
+  String get samsungLeft => '左';
+
+  @override
+  String get samsungRight => '右';
+
+  @override
+  String get samsungAutomatic => '自動';
+
+  @override
+  String get samsungGestureNone => 'なし';
+
+  @override
+  String get samsungGestureApps => 'アプリ一覧';
+
+  @override
+  String get samsungGestureRecents => '履歴';
+
+  @override
+  String get samsungGestureNotifications => '通知';
+
+  @override
+  String get samsungGestureQuickSettings => 'クイック設定';
+
+  @override
+  String get samsungHelp_resolution =>
+      'Samsungデスクトップがアプリやウィンドウを描画する作業領域を決めます。高い解像度ほど一度に多くの情報を表示できますが、文字やボタンは小さくなり、描画負荷も増えます。低い解像度は見やすさと動作の軽さを優先できます。Dextop本体の解像度とは別に保存されます。';
+
+  @override
+  String get samsungHelp_screenZoom =>
+      'Samsungデスクトップ上の文字・アイコン・ボタンをまとめて拡大または縮小します。DPIを高くすると各要素が大きく見やすくなり、低くすると同じ画面により多くの内容を表示できます。解像度そのものは変わりません。';
+
+  @override
+  String get samsungHelp_fontScale =>
+      'Samsungデスクトップ内の文字だけを拡大・縮小します。アイコンやウィンドウの大きさを大きく変えずに読みやすさを調整したい場合に使います。大きくしすぎると一部の画面で文章が折り返されたり、ボタンからはみ出す場合があります。';
+
+  @override
+  String get samsungHelp_screenTimeout =>
+      '操作がないときにSamsungデスクトップ画面が消灯するまでの時間を決めます。長くすると資料や動画を表示したままにしやすくなりますが、消費電力と発熱が増える可能性があります。';
+
+  @override
+  String get samsungHelp_audioOutput =>
+      '有効にすると、音楽・動画・通知などの音声をHDMIモニターやドックなど外部画面側へ出力します。無効にすると通常は端末側のスピーカーや現在選択中の音声機器が使われます。外部画面にスピーカーがない場合は音が聞こえなくなることがあります。';
+
+  @override
+  String get samsungHelp_displayOrientation =>
+      'Samsungデスクトップを指定した角度で表示します。縦置きモニターや回転可能な外部画面に向きを合わせるための設定です。実際の画面の向きと合わない値にすると、表示とマウス操作の方向がずれる場合があります。';
+
+  @override
+  String get samsungHelp_displayArrangement =>
+      '端末画面が外部画面の左側・右側のどちらにあるかをSamsungへ伝えます。マウスポインターを画面間で移動するときのつながる辺が変わります。実際の設置位置と合わせると、自然に別画面へ移動できます。';
+
+  @override
+  String get samsungHelp_autorunTouchpad =>
+      '有効にするとデスクトップ接続時に端末画面へSamsungのタッチパッドが自動表示され、端末をノートPCのタッチパッドのように使えます。Dextop独自のタッチ入力と二重に反応するため、Dextop実行中は非表示にしています。';
+
+  @override
+  String get samsungHelp_touchpadScrollDirection =>
+      'Samsungタッチパッドで2本指を動かした方向と、画面がスクロールする方向の関係を反転します。マウスホイール式とスマートフォンの直接操作式のうち、慣れている方向へ合わせるための設定です。';
+
+  @override
+  String get samsungHelp_touchKeyboard =>
+      '有効にするとデスクトップ接続時でも文字入力欄を選んだ際に画面キーボードを表示できます。物理キーボードがない環境では便利ですが、Dextopのキーボード表示制御と重複するため、Dextop実行中は非表示にしています。';
+
+  @override
+  String get samsungHelp_keyboardDex =>
+      '有効にすると物理キーボードを接続していても画面キーボードを表示できます。絵文字・手書き・音声入力を併用したい場合に便利ですが、作業領域が狭くなりDextopのIME制御とも競合するため、Dextop実行中は非表示にしています。';
+
+  @override
+  String get samsungHelp_spenInputMode =>
+      '有効にするとS Penを画面へ触れる前のホバー位置も含めてマウスポインターとして利用できます。細かな位置指定やペンでのデスクトップ操作がしやすくなります。描画アプリで筆圧を使いたい場合は、アプリ側の挙動が変わらないか確認してください。';
+
+  @override
+  String get samsungHelp_threeFingerGesture =>
+      'Samsungデスクトップで3本指操作を行ったときに、アプリ一覧・ホーム・履歴・戻るなど指定した操作を実行します。Dextopも3本指を操作メニューに使用するため、同時に有効だと誤動作しやすく、Dextop実行中は非表示にしています。';
+
+  @override
+  String get samsungHelp_fourFingerGesture =>
+      'Samsungデスクトップで4本指操作を行ったときに、選択したシステム操作を実行します。対応タッチパッドでは素早く画面を切り替えられますが、Dextopのマルチタッチ判定と競合するため、Dextop実行中は非表示にしています。';
+
+  @override
+  String get samsungHelp_autoHideTaskbar =>
+      '有効にすると操作していない間はSamsungデスクトップのタスクバーを隠し、アプリが使える縦方向の領域を広げます。画面下端へポインターを移動すると再表示されます。常にアプリ切り替えを見せたい場合は無効にしてください。';
+
+  @override
+  String get samsungHelp_dexCommandArrow =>
+      '有効にするとSamsungデスクトップの操作コマンドを呼び出す矢印を表示します。Samsung側の補助操作へ素早くアクセスできますが、Dextopのオーバーレイや画面端操作と重なる場合があります。';
+
+  @override
+  String get samsungHelp_includePhoneDisplay =>
+      '有効にすると端末内蔵画面を外部画面と同じデスクトップの画面構成に含めます。アプリやポインターを端末画面と外部画面の間で移動できる構成になります。端末画面を独立したAndroid操作用として残したい場合は無効にしてください。';
+
+  @override
+  String get samsungHelp_mirrorPhoneDisplay =>
+      '有効にすると端末内蔵画面と同じ内容をデスクトップ側にも表示します。説明やデモで同じ画面を見せたい場合に便利ですが、作業領域を拡張する機能ではなく、両画面に別々のアプリを表示できなくなります。';
+
+  @override
+  String get keyboardSettingsTitle => 'キーボード';
+
+  @override
+  String get keyboardSettingsDescription => 'キーボードテーマとスワイプ入力言語を設定';
+
+  @override
+  String get keyboardSwipeLanguages => 'スワイプ入力の言語';
+
+  @override
+  String get keyboardSwipeLanguagesDescription => 'MENUを長押しした時に表示する言語を選択します。';
+
+  @override
+  String get keyboardSwipeAddLanguage => '言語を追加';
+
+  @override
+  String get keyboardSwipeDefaultLanguage => 'デフォルト';
+
+  @override
+  String get keyboardSwipeInput => 'なぞり入力';
+
+  @override
+  String get keyboardSwipeInputDescription => 'キーボードをなぞって単語を入力します。初期状態では無効です。';
+
+  @override
+  String get keyboardSwipeCandidates => '変換候補を表示';
+
+  @override
+  String get keyboardSwipeCandidatesDescription => 'なぞり入力後に選択できる変換候補を表示します。';
+
+  @override
+  String get keyboardThemesTitle => 'キーボードテーマ';
+
+  @override
+  String get keyboardThemesChoose => 'テーマを選択';
+
+  @override
+  String get keyboardThemesNew => '新しいキーボードテーマ';
+
+  @override
+  String get keyboardThemesName => 'テーマ名';
+
+  @override
+  String get keyboardThemesCreate => '作成';
+
+  @override
+  String get keyboardThemesEdit => '編集';
+
+  @override
+  String get keyboardThemesDone => '完了';
+
+  @override
+  String get keyboardThemesDeleteTitle => 'テーマを削除しますか？';
+
+  @override
+  String keyboardThemesDeleteBody(String name) {
+    return '「$name」を削除しますか？この操作は元に戻せません。';
+  }
+
+  @override
+  String get keyboardThemesBuiltIn => '組み込みテーマは削除できません';
+
+  @override
+  String get keyboardThemesSelectFirst => '先にこのテーマを選択してください。';
+
+  @override
+  String get keyboardThemesStartFirst => '実際のキーボードデモを表示するには、先にDextopを開始してください。';
+
+  @override
+  String get keyboardThemesAdd => 'カスタムテーマを追加';
+
+  @override
+  String get keyboardThemesPreview => 'キーボードデモを表示';
+
+  @override
+  String get keyboardThemesEditTip => '編集';
+
+  @override
+  String get keyboardThemesImage => '背景画像を選択';
+
+  @override
+  String get keyboardThemesExport => 'テーマをエクスポート';
+
+  @override
+  String get keyboardThemesExportDialog => 'キーボードテーマをエクスポート';
+
+  @override
+  String get keyboardThemesOpacity => '不透明度';
+
+  @override
+  String get keyboardThemesBlur => 'ぼかし';
+
+  @override
+  String get keyboardThemesRadius => '角の丸み';
+
+  @override
+  String get keyboardThemesBackground => '背景';
+
+  @override
+  String get keyboardThemesKey => 'キー';
+
+  @override
+  String get keyboardThemesBorder => '枠線';
+
+  @override
+  String get keyboardThemesText => '文字';
+
+  @override
+  String get keyboardThemesTrackpad => 'トラックパッド';
+
+  @override
+  String get keyboardThemesKeyOpacity => 'キーの透明度';
+
+  @override
+  String get keyboardThemesTrackpadOpacity => 'トラックパッドの透明度';
+
+  @override
+  String get keyboardThemesShowTrackpadLabel => 'TRACKPADの文字を表示';
+
+  @override
+  String get keyboardThemesDescription => 'ラップトップキーボードのテーマと外観をカスタマイズ';
+
+  @override
+  String get autoSettingsTitle => 'Auto';
+
+  @override
+  String get autoSettingsDescription => 'Auto専用の表示とスマホ側ミラーリングを設定';
+
+  @override
+  String get autoSettingsOptions => 'Android Auto';
+
+  @override
+  String get autoMatchPhoneOrientation => 'スマホ側ミラーリングの向きをAutoに合わせる';
+
+  @override
+  String get autoMatchPhoneOrientationDescription =>
+      'スマホ側DextopをAutoへ表示するとき、車載画面の縦横比に合わせて向きを変更します。';
+
+  @override
+  String get autoExperimentalFeatures => '実験的な機能';
+
+  @override
+  String get autoHiddenDisplay => 'Auto用仮想ディスプレイを端末で非表示にする';
+
+  @override
+  String get autoHiddenDisplayDescription =>
+      'Auto用デスクトップの仮想ディスプレイを端末上へ表示せずに転送します。利用可否は端末によって異なります。';
+
+  @override
+  String get autoDisplayModeDescription =>
+      'Android Autoでは、接続した車載画面に合わせた独立したデスクトップを使用します。';
+
+  @override
+  String get setupEmbeddedTitle => 'Dextopアクセスを設定';
+
+  @override
+  String get setupEmbeddedDescription =>
+      'Dextopの内蔵アクセスサービスを接続します。\n\n1. 通知を許可します。\n2. ワイヤレスデバッグを開いて有効にします。\n3. 「ペア設定コードによるデバイスのペア設定」をタップします。\n4. 通知の入力欄にAndroidが表示した6桁のコードを入力します。';
+
+  @override
+  String get setupEmbeddedSetupDescription =>
+      'ワイヤレスデバッグの「ペア設定コードによるデバイスのペア設定」を開いてください。ペア設定サービスを検出すると、6桁のコードを入力する通知が自動的に表示されます。';
+
+  @override
+  String get setupEmbeddedWirelessDebuggingDescription =>
+      'Androidのワイヤレスデバッグ設定を開きます。ここでワイヤレスデバッグを有効にしてください。';
+
+  @override
+  String get setupEmbeddedOpenWirelessDebugging => 'ワイヤレスデバッグを開く';
+
+  @override
+  String get setupEmbeddedEnableWirelessDebugging => 'ワイヤレスデバッグを有効化';
+
+  @override
+  String get setupEmbeddedPairingCode => 'ペア設定コード';
+
+  @override
+  String get setupEmbeddedPairingCodeHint => 'Androidに表示された6桁のコード';
+
+  @override
+  String get setupEmbeddedInvalidCode => '有効な6桁のコードを入力してください';
+
+  @override
+  String get setupEmbeddedPair => 'ペア設定して開始';
+
+  @override
+  String get setupEmbeddedPairAndStart => 'Dextopアクセスを設定';
+
+  @override
+  String get setupEmbeddedIncluded => 'Dextopアクセスサービス内蔵';
+
+  @override
+  String get setupEmbeddedConnectedDescription => 'Dextopのアクセス権限を使用できます。';
+
+  @override
+  String get setupEmbeddedConfigure => 'ワイヤレスデバッグのペア設定';
+
+  @override
+  String get setupEmbeddedPairingFailed => 'ペア設定に失敗しました';
+
+  @override
+  String get setupEmbeddedStartFailed => 'Dextopアクセスサービスを開始できませんでした';
+
+  @override
+  String get setupEmbeddedNotificationPermission => '通知権限';
+
+  @override
+  String get setupEmbeddedAllowNotifications => '通知を許可';
+
+  @override
+  String get setupEmbeddedSearchingPairing => 'ペア設定サービスを検索中';
+
+  @override
+  String get setupEmbeddedPairingServiceFound => 'ペア設定サービスが見つかりました';
+
+  @override
+  String get setupEmbeddedPairingInProgress => 'ペア設定中';
+
+  @override
+  String get setupEmbeddedPairingServiceNotFound => 'ペア設定サービスが見つかりません';
+
+  @override
+  String get setupEmbeddedRetryPairing => 'ペア設定を再試行';
+
+  @override
+  String get setupEmbeddedPairingNotificationReady => '通知の入力欄に6桁のコードを入力してください。';
+
+  @override
+  String get experimentalCoverDisplay => 'カバーディスプレイセッション';
+
+  @override
+  String get experimentalGamepad => '実験的なゲームパッド機能';
+
+  @override
+  String get experimentalGamepadDescription => '仮想ゲームパッドとカバー画面の背面L/Rボタンを有効にします';
+
+  @override
+  String get experimentalCoverDisplayDescription =>
+      '折りたたみ端末のカバー画面で通常のAndroidまたは独立したDextopセッションを使用します';
+
+  @override
+  String get experimentalCoverDisplayUnavailable => '折りたたみ端末でのみ利用できます';
+
+  @override
+  String get experimentalForceLaptopMode => 'ラップトップモードを強制的に利用';
+
+  @override
+  String get experimentalForceLaptopModeDescription =>
+      '非折りたたみ端末でもオーバーレイからラップトップモードを手動で起動できるようにします';
+
+  @override
+  String get experimentalBlackBerryMode => 'BlackBerryモード';
+
+  @override
+  String get experimentalBlackBerryModeDescription =>
+      'スマートフォン向けのコンパクトな物理キーボード風配列をオーバーレイから利用できるようにします';
+
+  @override
+  String get blackBerryAutoStart => 'BlackBerryモードを自動で開く';
+
+  @override
+  String get blackBerryAutoStartDescription =>
+      '縦持ちでDextopセッションを開始した時にBlackBerryキーボードを自動で表示します';
+
+  @override
+  String get keyboardHaptics => 'キーボードのハプティック';
+
+  @override
+  String get keyboardHapticsDescription => 'キーやトラックパッドを操作した時に振動します';
+
+  @override
+  String get nativeUnknownPermissionResult => 'Shizukuから不明な権限結果が返されました';
+
+  @override
+  String get nativeDevice => '端末';
+
+  @override
+  String get nativeCoverDisplay => 'カバーディスプレイ';
+
+  @override
+  String get nativeCoverDisplayDescription =>
+      'カバー画面で通常のAndroidを開くか、独立したDextopセッションを作成します';
+
+  @override
+  String get nativeCoverAndroidDescription =>
+      'カバー画面を通常のAndroidとして使用します。メイン側のDextopセッションは継続します。';
+
+  @override
+  String get nativeCoverDextopDescription =>
+      'カバー画面にメイン側とは独立したDextopセッションを作成します。';
+
+  @override
+  String get nativeOpenCoverAndroid => '通常のAndroidを開く';
+
+  @override
+  String get nativeStopCoverAndroid => 'Androidセッションを終了';
+
+  @override
+  String get nativeStartCoverDextop => 'カバー側にDextopセッションを作成';
+
+  @override
+  String get nativeStopCoverDextop => 'カバー側のセッションを終了';
+
+  @override
+  String get nativeCoverDisplayFailed => 'カバーディスプレイを変更できませんでした';
+
+  @override
+  String get nativeBackButtons => '背面ボタン';
+
+  @override
+  String get nativeBackButtonsDescription => 'カバー画面をL/R・L2/R2の背面ボタンとして使用します';
+
+  @override
+  String get nativeStartBackButtons => '背面ボタンを開始';
+
+  @override
+  String get nativeStopBackButtons => '背面ボタンを終了';
+
+  @override
+  String get nativeBackButtonsConfirmTitle => 'カバー画面を切り替えますか？';
+
+  @override
+  String get nativeBackButtonsConfirmMessage => '現在のカバー画面の動作を終了して、背面ボタンを表示します。';
+
+  @override
+  String get nativeSwitchToResolutionSuffix => 'この解像度とDPIへ切り替えます';
+
+  @override
+  String get nativeShizukuUnavailable => 'Shizukuを利用できません';
+
+  @override
+  String get nativeSelectedAppCannotLaunch => '選択したアプリを起動できません';
+
+  @override
+  String get nativeShizukuBinderUnavailable => 'Shizukuへの接続を利用できません';
+
+  @override
+  String get nativeMirrorSurfaceUnavailable => 'ミラー表示領域を利用できません';
+
+  @override
+  String get nativeRotationReleaseUnsupported => '画面回転の固定解除に対応していません';
+
+  @override
+  String get nativePerformanceHudFormat =>
+      '%1\$.1f FPS  |  %2\$d MB\nバッテリー: %3\$d%%  |  %4\$s\nCPU温度: %6\$s  |  入力: %5\$s';
+
+  @override
+  String get nativeInputMouse => 'マウス';
+
+  @override
+  String get nativeInputTouch => 'タップ';
+
+  @override
+  String get nativeInputTrackpad => 'トラックパッド';
+
+  @override
+  String get nativeInputIdle => '待機中';
+
+  @override
+  String get nativePhysicalMouse => '物理マウスの入力先を切り替え';
+
+  @override
+  String get nativePhysicalKeyboard => '物理キーボードの入力先を切り替え';
+
+  @override
+  String get nativePhysicalMouseDemo =>
+      '物理マウスの入力先をAndroidとDextopの間で切り替えます。対応端末で外部ディスプレイ接続中に表示されます';
+
+  @override
+  String get nativePhysicalKeyboardDemo =>
+      '物理キーボードの入力先をAndroidとDextopの間で切り替えます。対応端末で外部ディスプレイ接続中に表示されます';
+
+  @override
+  String get nativeTheThreeFingerGestureIsAnEssential =>
+      '3本指ジェスチャーはDextop使用中に必須の操作方法です。\\n各ボタンをタップすると、ここに機能の説明が表示されます';
+
+  @override
+  String get nativeAsusZenuiRogUiDesktop => 'ASUS ZenUI / ROG UI デスクトップ';
+
+  @override
+  String get nativeAndroidDesktopFreeform => 'Android デスクトップ（Freeform）';
+
+  @override
+  String get nativeColorosDesktop => 'ColorOS 系デスクトップ';
+
+  @override
+  String get nativeAdjustTheVolumeOfPlaybackOnDextop => 'Dextopで再生する音量を調整します';
+
+  @override
+  String get nativeSwitchBetweenPortraitAndLandscapeOrientationOf =>
+      'Dextopの縦向きと横向きを切り替えます';
+
+  @override
+  String get nativeSwitchDextopResolutionAndDpi => 'Dextopの解像度とDPIを切り替えます';
+
+  @override
+  String get nativePauseDextopAndReturnYourAndroidTo =>
+      'Dextopを一時停止し、Androidを通常操作できる状態へ戻します';
+
+  @override
+  String get nativeTerminateYourDextopSession => 'Dextopセッションを終了します';
+
+  @override
+  String get nativeAdjustTheBrightnessOfTheDesktopDisplay =>
+      'Dextop表示の明るさを調整します';
+
+  @override
+  String get nativeHonorMagicosDesktop => 'HONOR MagicOS デスクトップ';
+
+  @override
+  String get nativeHuaweiEmuiDesktop => 'Huawei EMUI デスクトップ';
+
+  @override
+  String get nativeHyperosMiuiDesktop => 'HyperOS / MIUI デスクトップ';
+
+  @override
+  String get nativeMotorolaLenovoDesktop => 'Motorola / Lenovo デスクトップ';
+
+  @override
+  String get nativeNothingOsDesktop => 'Nothing OS デスクトップ';
+
+  @override
+  String get nativeOriginosFuntouchOsDesktop => 'OriginOS / Funtouch OS デスクトップ';
+
+  @override
+  String get nativePixelAndroidDesktop => 'Pixel Android デスクトップ';
+
+  @override
+  String get nativeShizukuPermissionCheckTimedOut => 'Shizukuの権限確認がタイムアウトしました';
+
+  @override
+  String get nativeRequiresConnectionToShizukuAndPermissions =>
+      'Shizukuへの接続と権限許可が必要です';
+
+  @override
+  String get nativePermissionDeniedToShizuku => 'Shizukuへの権限が拒否されました';
+
+  @override
+  String get nativePleaseInstallShizuku => 'Shizukuをインストールしてください';
+
+  @override
+  String get nativePleaseStartShizuku => 'Shizukuを起動してください';
+
+  @override
+  String get nativeRemoveThisResolution => 'この解像度を削除';
+
+  @override
+  String get nativeNoAppSelected => 'アプリが選択されていません';
+
+  @override
+  String get nativeCouldNotStartApp => 'アプリを起動できませんでした';
+
+  @override
+  String get nativeAddCustomResolution => 'カスタム解像度を追加';
+
+  @override
+  String get nativeRotate180 => '180度回転';
+
+  @override
+  String get nativeCast => 'キャスト';
+
+  @override
+  String get nativeCastDescription => 'キャスト先を選択';
+
+  @override
+  String get nativeNoCastDevices => '利用可能なGoogle Castデバイスがありません';
+
+  @override
+  String get nativeCastUnavailable => 'Google Castを初期化できませんでした';
+
+  @override
+  String get nativeCasting => 'キャスト中';
+
+  @override
+  String get nativeStopCasting => 'キャストを終了';
+
+  @override
+  String get nativeScanAgain => '再スキャン';
+
+  @override
+  String get nativeScanning => 'スキャン中…';
+
+  @override
+  String get nativeCursor => 'カーソル';
+
+  @override
+  String get nativeTap => 'タップ';
+
+  @override
+  String get nativeTapToExit => 'タップして終了';
+
+  @override
+  String get nativeTapToOpen => 'タップして開く';
+
+  @override
+  String get nativeYouCanRearrangeTheLayoutInThe =>
+      'ボタンを長押しして、操作パネル内の配置を並べ替えられます';
+
+  @override
+  String get nativeWorkSpace => 'ワークスペース';
+
+  @override
+  String get nativeExpandWorkspace => 'ワークスペースを展開';
+
+  @override
+  String get nativeTemporarilyReturnToAndroid => '一時的にAndroidに戻る';
+
+  @override
+  String get nativeLaptopMode => 'ラップトップモード';
+
+  @override
+  String get nativeLaptopModeDescription => '折りたたみ端末の下半分にキーボードとトラックパッドを表示します';
+
+  @override
+  String get nativeKeyboardStyle => 'スタイル';
+
+  @override
+  String get nativeBlackBerryMode => 'BlackBerryモード';
+
+  @override
+  String get nativeBlackBerryLayout => 'BlackBerryレイアウト';
+
+  @override
+  String get nativeAutomaticLayout => '自動レイアウト';
+
+  @override
+  String get nativeManualHeight => '高さを手動調整';
+
+  @override
+  String get nativeKeyboardHeight => 'キーボードの高さ';
+
+  @override
+  String get nativeBlackBerryModeDescription => 'スマートフォン向けのコンパクトなキーボードだけを表示します';
+
+  @override
+  String get nativeVirtualGamepad => '仮想ゲームパッド';
+
+  @override
+  String get nativeVirtualGamepadDescription =>
+      'ABXY、スティック、トリガーなどを備えた仮想ゲームパッドを表示します';
+
+  @override
+  String get nativeGamepadLayout => 'ゲームパッドレイアウト';
+
+  @override
+  String get nativeGameBoyStyle => 'ゲームボーイスタイル';
+
+  @override
+  String get nativeGameBoyStyleDescription =>
+      'ゲームボーイ風の十字キー、A/B、SELECT/STARTを表示します';
+
+  @override
+  String get nativeOk => 'OK';
+
+  @override
+  String get nativeCancel => 'キャンセル';
+
+  @override
+  String get nativeKeyboardSettings => 'キーボード設定';
+
+  @override
+  String get nativeKeyboardSettingsDescription => 'ラップトップキーボードの外観をカスタマイズします';
+
+  @override
+  String get nativeTheme => 'テーマ';
+
+  @override
+  String get nativeSwipeLanguage => 'なぞり入力の言語';
+
+  @override
+  String get nativeSwipeLanguageDescription => 'タップ入力は現在のIMEを引き続き使用します';
+
+  @override
+  String get nativeKeyboardThemeStandard => '標準';
+
+  @override
+  String get nativeKeyboardThemeCrimson => 'クリムゾン';
+
+  @override
+  String get nativeKeyboardThemeCloud => 'Cloud Pop';
+
+  @override
+  String get nativeKeyboardThemeAmoled => 'AMOLED';
+
+  @override
+  String get nativeKeyboardThemeStandardDescription => '落ち着いたダークキーボード';
+
+  @override
+  String get nativeKeyboardThemeCrimsonDescription => '折りたたみPCをイメージした暖色のクリムゾン';
+
+  @override
+  String get nativeKeyboardThemeCloudDescription => 'やわらかな雲色のキーボード';
+
+  @override
+  String get nativeKeyboardThemeAmoledDescription => '黒を基調にした省電力キーボード';
+
+  @override
+  String get nativeKeyboardThemeCustomDescription => 'カスタムキーボードテーマ';
+
+  @override
+  String get nativeOpenDextopWithYourSavedAppPlacement =>
+      '保存されたアプリ配置でDextopを開きます';
+
+  @override
+  String get nativeSaveAndApply => '保存して適用';
+
+  @override
+  String get nativeFailedToSaveUnableToRetrieveRunning =>
+      '保存できませんでした：Dextop上で起動中のアプリを取得できません。';
+
+  @override
+  String get nativeFailedToSaveFailedToWriteTo =>
+      '保存できませんでした：端末ストレージへの書き込みに失敗しました。';
+
+  @override
+  String get nativeViewSavedWorkspacesAndSaveCurrentArrangement =>
+      '保存済みワークスペースの表示と、現在の配置の保存ができます';
+
+  @override
+  String get nativeNoSavedWorkspaces => '保存済みワークスペースはありません';
+
+  @override
+  String get nativePleaseStartDextopFirst => '先にDextopを開始してください';
+
+  @override
+  String get nativeReconnect => '再接続';
+
+  @override
+  String get nativeWidth => '幅';
+
+  @override
+  String get nativeReturn => '戻る';
+
+  @override
+  String get nativePermissionRequestInProgress => '権限リクエストが進行中です';
+
+  @override
+  String get nativeHorizontalHolding => '横持ち';
+
+  @override
+  String get nativeSaveTheCurrentAppArrangementAsA =>
+      '現在のアプリ配置をワークスペースとして保存します';
+
+  @override
+  String get nativeAddCurrentAppPlacement => '現在のアプリ配置を追加';
+
+  @override
+  String get nativeScreenBrightness => '画面の明るさ';
+
+  @override
+  String get nativeUseTheScreenAsATrackpadTo => '画面をトラックパッドとして使い、カーソルを操作します';
+
+  @override
+  String get nativeEnd => '終了';
+
+  @override
+  String get nativeEdit => '編集';
+
+  @override
+  String get nativeVerticalHolding => '縦持ち';
+
+  @override
+  String get nativeReconnectIfYouHaveDisplayOrConnection =>
+      '表示や接続に問題がある場合に再接続します';
+
+  @override
+  String get nativeDisplayProfileIsOutOfRange => '表示プロファイルが範囲外です';
+
+  @override
+  String get nativeResolution => '解像度';
+
+  @override
+  String get nativeEditResolution => '解像度を編集';
+
+  @override
+  String get nativeAddResolution => '解像度を追加';
+
+  @override
+  String get nativeSendsTheTouchedPositionDirectlyToDextop =>
+      '触れた位置をDextopへ直接タップとして送ります';
+
+  @override
+  String get nativeAddAndApply => '追加して適用';
+
+  @override
+  String get nativeEditPlacement => '配置を編集';
+
+  @override
+  String get nativeCompletePlacementEdit => '配置編集を完了';
+
+  @override
+  String get nativeVolume => '音量';
+
+  @override
+  String get nativeHeight => '高さ';
+
+  @override
+  String get multiTouchUpgradeTitle => 'アプリが更新され、ジェスチャーが変更されました。';
+
+  @override
+  String get multiTouchUpgradeBody => '';
+
+  @override
+  String get multiTouchUpgradeLandscape => '横向きの場合\\n画面左から右に3本指でスワイプ';
+
+  @override
+  String get multiTouchUpgradePortrait => '縦持ちの場合\\n画面上から下に3本指でスワイプ';
+
+  @override
+  String get multiTouchUpgradeClose => '確認';
+
+  @override
+  String appUpdatedTitle(String version) {
+    return '$versionへ更新されました！';
+  }
+
+  @override
+  String get appUpdatedMessage => 'Dextopが最新バージョンになりました。';
+
+  @override
+  String get androidSwipeImeLabel => 'Dextop なぞり入力';
+
+  @override
+  String get androidAccessibilityServiceDescription =>
+      'Dextopの仮想ディスプレイ、入力、操作パネルを制御します';
+
+  @override
+  String get androidEmbeddedPairingChannel => '内蔵アクセスサービスの設定';
+
+  @override
+  String get androidEmbeddedPairingTitle => 'Dextopをペア設定';
+
+  @override
+  String get androidEmbeddedPairingNotificationText =>
+      'ワイヤレスデバッグに表示された6桁のコードを入力してください';
+
+  @override
+  String get androidEmbeddedPairingCode => '6桁のペア設定コード';
+
+  @override
+  String get androidEmbeddedPairingEnterCode => 'ペア設定コードを入力';
+
+  @override
+  String get androidEmbeddedPairingSuccess => 'Dextopの接続が完了しました';
+
+  @override
+  String get androidEmbeddedPairingSuccessMessage =>
+      'ペア設定が完了しました。Dextopに戻ってください。';
+
+  @override
+  String get androidEmbeddedPairingFailed => 'Dextopを接続できませんでした';
+
+  @override
+  String get androidEmbeddedPairingInvalidCode => '6桁のコードを入力してください';
+
+  @override
+  String get androidEmbeddedPairingSearching => 'ペア設定サービスを検索中';
+
+  @override
+  String get androidEmbeddedPairingServiceFound => 'ペア設定サービスが見つかりました';
+
+  @override
+  String get androidEmbeddedPairingServiceNotFound => 'ペア設定サービスが見つかりません';
+
+  @override
+  String get androidEmbeddedPairingRetry => '再試行';
+
+  @override
+  String get androidEmbeddedPairingInProgress => 'ペア設定中';
+}
